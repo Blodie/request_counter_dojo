@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Statistics</title>
+</head>
+
+<body>
+        <table>
+                <thead>
+                    <tr>
+                        {% for key in methods.keys() %}
+                            <th>{{ key }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        {% for key in methods %}
+                            <td> {{ methods[key] }} </td>    
+                        {% endfor %}
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/"><input type="button" value="Home" /></a>
+</body>
+</html>
